@@ -19,3 +19,4 @@ washington.csv
 ### Credits
 Credits:
 Thanks to Udacity for providing the files.
+Thanks to mentors at Udacity for the help.
