@@ -164,6 +164,7 @@ def user_stats(df, city, month, day):
     print('-'*40)
 
 def raw_data(df):
+    """ Offer to display 5 rows of raw data until user says no"""
     i=0
     while True:
         user_input = input('Would you like to see 5 rows of raw data?\n').lower()
