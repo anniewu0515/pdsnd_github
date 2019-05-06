@@ -2,6 +2,8 @@ import time
 import pandas as pd
 import numpy as np
 
+""" The pupose of Bikeshare.py is to use data to analyse bikeshare trends in the Chicago, New York, and Washington"""
+
 CITY_DATA = {'Chicago': 'chicago.csv',
              'New York': 'new_york_city.csv',
              'Washington': 'washington.csv'}
