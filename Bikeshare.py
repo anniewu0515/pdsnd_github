@@ -21,9 +21,10 @@ def get_filters():
     print('Hello! Let\'s explore some US bikeshare data!')
     
     # get user input for city they want to investigate
+    cities = ['Chicago', 'Washington', 'New York']
     city = input(
         'Would you like to see data from Chicago, New York, or Washington?\n').title()
-    while(city != 'Chicago' and city != 'New York' and city != 'Washington'):
+    while city not in cities:
         print('That\'s not a valid response\n')
         city = input('Chicago, New York, or Washington?\n').title()
 
@@ -166,6 +167,7 @@ def user_stats(df, city, month, day):
     print('-'*40)
 
 def raw_data(df):
+    """ Offer to display 5 rows of raw data until user says no"""
     i=0
     while True:
         user_input = input('Would you like to see 5 rows of raw data?\n').lower()
